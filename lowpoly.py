@@ -40,10 +40,10 @@ def import_usdz(file_path):
 @app.command()
 def execute(
     file_path: str,
-    source_object_name: str = "Mesh",
     target_faces: int = 7500,
     texture_resolution: int = 2048,
     multiresolution_levels: int = 3,
+    source_object_name: str = "Mesh",
 ):
     # Delete the default cube
     bpy.data.objects["Cube"].select_set(True)
